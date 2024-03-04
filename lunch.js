@@ -12,10 +12,26 @@
  * availableTime is a Number representing the time you have for lunch,
  * in minutes.
  */
+const timeForLunch = timeLeft => {
+  if(timeLeft < 20){
+    console.log("I'm hungry and I have 20 minutes for lunch.")
+  }else if(timeLeft < 30){
+    console.log("I'm not hungry and I have 30 minutes for lunch.")
+  }else{
+    console.log("I'm not hungry and I have 30 minutes for lunch")  
+  }
+}
 
 const whatToDoForLunch = function(hungry, availableTime) {
   console.log("I don't know what to do!");
+  if(hungry == false){
+    console.log("get back to work")
+  }else{
+    timeForLunch(availableTime);
+  }
 }
+
+
 
 
 /*
